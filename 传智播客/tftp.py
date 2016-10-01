@@ -15,7 +15,7 @@ while True:
 
     # 3.1.2解析出序号,比如(3,1)
     cmdTuple = struct.unpack(b'!HH', recvData[:4])
-    # 操作吗
+    # 操作码
     cmdKey = cmdTuple[0]
     if cmdKey == 3:
         # 序号
